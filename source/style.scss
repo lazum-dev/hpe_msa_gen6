@@ -10,15 +10,15 @@
 @font-face {
 	font-family: "OpenSans";
 	font-display: swap;
-	src: url("https://static.lc-group.ru/fonts/OpenSans/OpenSans-Regular.ttf")
+	src: url("../fonts/OpenSans-Regular.ttf")
 			format("truetype"),
-		url("https://static.lc-group.ru/fonts/OpenSans/OpenSans-Regular.woff")
+		url("../fonts/OpenSans-Regular.woff")
 			format("woff"),
-		url("https://static.lc-group.ru/fonts/OpenSans/OpenSans-Regular.woff2")
+		url("../fonts/OpenSans-Regular.woff2")
 			format("woff2"),
-		url("https://static.lc-group.ru/fonts/OpenSans/OpenSans-Regular.eot")
+		url("../fonts/OpenSans-Regular.eot")
 			format("eot"),
-		url("https://static.lc-group.ru/fonts/OpenSans/OpenSans-Regular.svg")
+		url("../fonts/OpenSans-Regular.svg")
 			format("svg");
 	font-weight: 400;
 	font-style: normal;
@@ -26,15 +26,15 @@
 @font-face {
 	font-family: "OpenSans";
 	font-display: swap;
-	src: url("https://static.lc-group.ru/fonts/OpenSans/OpenSans-SemiBold.ttf")
+	src: url("../fonts/OpenSans-SemiBold.ttf")
 			format("truetype"),
-		url("https://static.lc-group.ru/fonts/OpenSans/OpenSans-SemiBold.woff")
+		url("../fonts/OpenSans-SemiBold.woff")
 			format("woff"),
-		url("https://static.lc-group.ru/fonts/OpenSans/OpenSans-SemiBold.woff2")
+		url("../fonts/OpenSans-SemiBold.woff2")
 			format("woff2"),
-		url("https://static.lc-group.ru/fonts/OpenSans/OpenSans-SemiBold.eot")
+		url("../fonts/OpenSans-SemiBold.eot")
 			format("eot"),
-		url("https://static.lc-group.ru/fonts/OpenSans/OpenSans-SemiBold.svg")
+		url("../fonts/OpenSans-SemiBold.svg")
 			format("svg");
 	font-weight: 600;
 	font-style: normal;
@@ -42,15 +42,15 @@
 @font-face {
 	font-family: "OpenSans";
 	font-display: swap;
-	src: url("https://static.lc-group.ru/fonts/OpenSans/OpenSans-Bold.ttf")
+	src: url("../fonts/OpenSans-Bold.ttf")
 			format("truetype"),
-		url("https://static.lc-group.ru/fonts/OpenSans/OpenSans-Bold.woff")
+		url("../fonts/OpenSans-Bold.woff")
 			format("woff"),
-		url("https://static.lc-group.ru/fonts/OpenSans/OpenSans-Bold.woff2")
+		url("../fonts/OpenSans-Bold.woff2")
 			format("woff2"),
-		url("https://static.lc-group.ru/fonts/OpenSans/OpenSans-Bold.eot")
+		url("../fonts/OpenSans-Bold.eot")
 			format("eot"),
-		url("https://static.lc-group.ru/fonts/OpenSans/OpenSans-Bold.svg")
+		url("../fonts/OpenSans-Bold.svg")
 			format("svg");
 	font-weight: 700;
 	font-style: normal;
@@ -460,8 +460,8 @@ section.why_section {
 		&_left {
 			align-items: flex-start;
 			.col_content{
-				transition: opacity 1.6s 0.2s ease, transform 1.2s ease-out;
-				transform: translate(-100%,0);
+				transition: opacity 1.6s ease, transform 1.2s ease-out;
+				transform: translate(0,70%);
 				opacity: 0;
 				@media ($mxw992) {
 					opacity: 1;
