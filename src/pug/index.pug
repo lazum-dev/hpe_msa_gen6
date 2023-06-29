@@ -8,20 +8,20 @@ html(lang='ru')
 		meta(name='description' content='Новое поколение гибридной системы хранения данных')
 		meta(property='og:title' content='Семейство продуктов HPE MSA GEN6')
 		meta(property='og:description' content='Новое поколение гибридной системы хранения данных')
-		meta(property='og:image' content='img/op_banner.jpg')
+		meta(property='og:image' content='/hpe_msa_gen6/img/op_banner.jpg')
 		meta(name='robots' content='noindex, nofollow')
-		link(rel='shortcut icon' type='image/png' href='img/favicon.ico')
-		link(href='css/style.css' rel='stylesheet' type='text/css')
+		link(rel='shortcut icon' type='image/png' href='/hpe_msa_gen6/img/favicon.ico')
+		link(href='/hpe_msa_gen6/css/style.css' rel='stylesheet' type='text/css')
 	body
 		header
 			.container
 				.wrapper
 					.logo
 						a(href='https://tegrus.ru/' target="_blank")
-							img(src='img/logo_tegrus.svg' alt='TEGRUS')
+							img(src='/hpe_msa_gen6/img/logo_tegrus.svg' alt='TEGRUS')
 		main
 			section.banner
-				img(src='img/banner.webp' alt='Семейство продуктов HPE MSA GEN6')
+				img(src='/hpe_msa_gen6/img/banner.webp' alt='Семейство продуктов HPE MSA GEN6')
 			.wrapper_size
 				.lf
 				.rg
@@ -53,7 +53,7 @@ html(lang='ru')
 											| Недавно компания Hewlett Packard Enterprise представила новое поколение гибридной системы хранения данных начального уровня с&nbsp;поддержкой флеш-памяти, которая позволит предприятиям сконцентрироваться на&nbsp;бизнес-задачах и&nbsp;обеспечит высокий уровень автоматизации и&nbsp;производительности даже в&nbsp;условиях ограниченного бюджета.
 						.col.col_right
 							.img_container
-								img(src='img/office_01.webp' alt='Семейство продуктов HPE MSA GEN6')
+								img(src='/hpe_msa_gen6/img/office_01.webp' alt='Семейство продуктов HPE MSA GEN6')
 			section.why_section
 				.container
 					.wrapper
@@ -129,7 +129,7 @@ html(lang='ru')
 							.col.col_left
 								.col_content
 									.img_container
-										img(src='img/hpe_msa_gen6_1060.webp' alt='HPE MSA GEN6 1060')
+										img(src='/hpe_msa_gen6/img/hpe_msa_gen6_1060.webp' alt='HPE MSA GEN6 1060')
 							.col.col_right
 								.col_content
 									.text_container
@@ -153,7 +153,7 @@ html(lang='ru')
 											| Гибридная конфигурации, которая позволяет использовать технологию Tiering прямо из&nbsp;коробки (включает 2&nbsp;SSD диска и&nbsp;лицензию Advised Data Services), подходит для выполнения высокопроизводительных смешанных рабочих нагрузок, а&nbsp;также позволяет использовать массив, в&nbsp;качестве основной системы хранения в&nbsp;компании
 						.col.col_right
 							.img_container
-								img(src='img/hpe_msa_gen_2060-62.webp' alt='HPE MSA GEN6 2060/62')
+								img(src='/hpe_msa_gen6/img/hpe_msa_gen_2060-62.webp' alt='HPE MSA GEN6 2060/62')
 			section.features_section
 				.wrapper
 					.row
@@ -203,7 +203,7 @@ html(lang='ru')
 							.col.col_left
 								.col_content
 									.img_container
-										img(src='img/office_02.webp' alt='Новый инструмент HPE MSA Health Check')
+										img(src='/hpe_msa_gen6/img/office_02.webp' alt='Новый инструмент HPE MSA Health Check')
 							.col.col_right
 								.col_content
 									.text_container
@@ -218,42 +218,38 @@ html(lang='ru')
 					.row
 						.col
 							.col_content
-								#requestForm
+								.form#requestForm
 									.form_container
-										h2
-											| Получить <br>консультацию <br>специалиста
-										.fill-form 
-											| Заполните все поля, пожалуйста
-										.register
-											form.former(method='post' action='' enctype='multipart/form-data')
-												#requestForm_input_i1.input_container.input_text
-													input.text.required.validate-me(type='text' name='i1' value='' data-type='fio' placeholder='Имя Фамилия')
-												#requestForm_input_i2.input_container.input_text
-													input.text.required.validate-me(type='text' name='i2' value='' data-type='company' placeholder='Название компании')
-												#requestForm_input_i3.input_container.input_text
-													input.text.required.validate-me(type='text' name='i3' value='' data-type='email' placeholder='E-mail')
-												#requestForm_input_i4.input_container.input_text
-													textarea.text.required.validate-me(name='i4' placeholder='Ваш вопрос')
-												.inner-wrap
-													.field.checkbox-field
-														input#requestForm_policyCheckbox(type='checkbox' name='policy' value='1')
-														label.customCheckbox(for='requestForm_policyCheckbox')
-													.input.text
-														| Согласен с&nbsp;условиями <a href="https://tegrus.ru/about/privacy-policy/" target="_blank">политики обработки персональных данных</a>
-												input.sendbutton(type='submit' value='Отправить' name='subm')
+										h2 Получить <br>консультацию <br>специалиста
+										form.register(method='post' action='' enctype='multipart/form-data')
+											fieldset.input_container.input_text
+												input(type='text' name='Имя' data-validate-field="name" placeholder='Имя Фамилия')
+											fieldset.input_container.input_text
+												input(type='text' name='Компания' data-validate-field="company" placeholder='Название компании')
+											fieldset.input_container.input_text
+												input(type='email' name='E-mail' data-validate-field="email" placeholder='E-mail')
+											fieldset.input_container.input_text
+												textarea(name='Вопрос' placeholder='Ваш вопрос' data-validate-field="question")
+											.inner-wrap
+												.field.checkbox-field
+													input#requestForm_policyCheckbox(type='checkbox' name='policy' value='1')
+													label.customCheckbox(for='requestForm_policyCheckbox')
+												.input
+													| Согласен с&nbsp;условиями <a href="https://tegrus.ru/about/privacy-policy/" target="_blank">политики обработки персональных данных</a>
+											input.sendbutton(type='submit' value='Отправить' name='subm')
 			section.partners_section
 				.wrapper_full
 					.partners
 						div
-							img(src='img/partner_gold.webp' alt='Gold Partner')
+							img(src='/hpe_msa_gen6/img/partner_gold.webp' alt='Gold Partner')
 						div
-							img(src='img/partner_platinum.webp' alt='Platinum Partner')
+							img(src='/hpe_msa_gen6/img/partner_platinum.webp' alt='Platinum Partner')
 			#getSolutionButton
 				span Подобрать решение
 			a#toTop(href='#main')
 			#getSolutionForm
 				.container
-					form.former(method='post' action='#' enctype='multipart/form-data')
+					form.form.former(method='post' action='#' enctype='multipart/form-data')
 						.row
 							.col
 								.col_content
@@ -344,23 +340,22 @@ html(lang='ru')
 												span Коммуникационные услуги
 							.col.col_right
 								.col_content
-									.form2
-										.register
-											#getSolutionForm_input_i1.input_container.input_text
-												input.text.required.validate-me(type='text' name='i1' value='' data-type='fio' placeholder='Имя Фамилия')
-											#getSolutionForm_input_i2.input_container.input_text
-												input.text.required.validate-me(type='text' name='i2' value='' data-type='company' placeholder='Название компании')
-											#getSolutionForm_input_i3.input_container.input_text
-												input.text.required.validate-me(type='text' name='i3' value='' data-type='email' placeholder='E-mail')
-											#getSolutionForm_input_i4.input_container.input_text
-												textarea.text.required.validate-me(name='i4' placeholder='Ваш вопрос')
-											.inner-wrap
-												.input_container.input_checkbox.field.checkbox-field
-													input#getSolutionForm_policyCheckbox(type='checkbox' name='policy')
-													label.customCheckbox(for='getSolutionForm_policyCheckbox')
-												.policy_text
-													| Согласен с&nbsp;условиями <a href="https://tegrus.ru/about/privacy-policy/" target="_blank">политики обработки персональных данных</a>
-											input.sendbutton(type='submit' value='Отправить' name='subm')
+									.register
+										fieldset.input_container.input_text
+											input(type='text' name='Имя' data-validate-field="name" placeholder='Имя Фамилия')
+										fieldset.input_container.input_text
+											input(type='text' name='Компания' data-validate-field="company" placeholder='Название компании')
+										fieldset.input_container.input_text
+											input(type='email' name='E-mail' data-validate-field="email" placeholder='E-mail')
+										fieldset.input_container.input_text
+											textarea(name='Вопрос' placeholder='Ваш вопрос' data-validate-field="question")
+										.inner-wrap
+											.input_container.input_checkbox.field.checkbox-field
+												input#getSolutionForm_policyCheckbox(type='checkbox' name='policy')
+												label.customCheckbox(for='getSolutionForm_policyCheckbox')
+											.policy_text
+												| Согласен с&nbsp;условиями <a href="https://tegrus.ru/about/privacy-policy/" target="_blank">политики обработки персональных данных</a>
+										input.sendbutton(type='submit' value='Отправить' name='subm')
 		footer
 			.container
 				.wrapper
@@ -368,7 +363,7 @@ html(lang='ru')
 						.col.col_left
 							.col_content
 								a(href='https://tegrus.ru' target="_blank")
-									img(src='img/logo_footer.svg' alt='Tegrus')
+									img(src='/hpe_msa_gen6/img/logo_footer.svg' alt='Tegrus')
 						.col.col_right
 							.row
 								.col
@@ -395,6 +390,7 @@ html(lang='ru')
 								| &copy;&nbsp;2023, ООО &laquo;МП&raquo;
 								nobr Все права защищены.
 
-		script(type='text/javascript' src='libs/jquery-3.5.1.min.js')
-		script(type='text/javascript' src='libs/jquery.fancybox.min.js')
-		script(type='text/javascript' src='js/main.js')
+		script(src='/hpe_msa_gen6/libs/jquery-3.5.1.min.js')
+		script(src='/hpe_msa_gen6/libs/jquery.fancybox.min.js')
+		script(src='/hpe_msa_gen6/libs/just-validate.min.js')
+		script(src='/hpe_msa_gen6/js/main.js')

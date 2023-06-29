@@ -8,21 +8,21 @@
     <meta name="description" content="Новое поколение гибридной системы хранения данных">
     <meta property="og:title" content="Семейство продуктов HPE MSA GEN6">
     <meta property="og:description" content="Новое поколение гибридной системы хранения данных">
-    <meta property="og:image" content="img/op_banner.jpg">
+    <meta property="og:image" content="/hpe_msa_gen6/img/op_banner.jpg">
     <meta name="robots" content="noindex, nofollow">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="/hpe_msa_gen6/img/favicon.ico">
+    <link href="/hpe_msa_gen6/css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header>
       <div class="container">
         <div class="wrapper">
-          <div class="logo"><a href="https://tegrus.ru/" target="_blank"><img src="img/logo_tegrus.svg" alt="TEGRUS"></a></div>
+          <div class="logo"><a href="https://tegrus.ru/" target="_blank"><img src="/hpe_msa_gen6/img/logo_tegrus.svg" alt="TEGRUS"></a></div>
         </div>
       </div>
     </header>
     <main>
-      <section class="banner"><img src="img/banner.webp" alt="Семейство продуктов HPE MSA GEN6"></section>
+      <section class="banner"><img src="/hpe_msa_gen6/img/banner.webp" alt="Семейство продуктов HPE MSA GEN6"></section>
       <div class="wrapper_size">
         <div class="lf"></div>
         <div class="rg"></div>
@@ -63,7 +63,7 @@
               </div>
             </div>
             <div class="col col_right">
-              <div class="img_container"><img src="img/office_01.webp" alt="Семейство продуктов HPE MSA GEN6"></div>
+              <div class="img_container"><img src="/hpe_msa_gen6/img/office_01.webp" alt="Семейство продуктов HPE MSA GEN6"></div>
             </div>
           </div>
         </div>
@@ -175,7 +175,7 @@
             <div class="row">
               <div class="col col_left">
                 <div class="col_content">
-                  <div class="img_container"><img src="img/hpe_msa_gen6_1060.webp" alt="HPE MSA GEN6 1060"></div>
+                  <div class="img_container"><img src="/hpe_msa_gen6/img/hpe_msa_gen6_1060.webp" alt="HPE MSA GEN6 1060"></div>
                 </div>
               </div>
               <div class="col col_right">
@@ -208,7 +208,7 @@
               </div>
             </div>
             <div class="col col_right">
-              <div class="img_container"><img src="img/hpe_msa_gen_2060-62.webp" alt="HPE MSA GEN6 2060/62"></div>
+              <div class="img_container"><img src="/hpe_msa_gen6/img/hpe_msa_gen_2060-62.webp" alt="HPE MSA GEN6 2060/62"></div>
             </div>
           </div>
         </div>
@@ -280,7 +280,7 @@
             <div class="row">
               <div class="col col_left">
                 <div class="col_content">
-                  <div class="img_container"><img src="img/office_02.webp" alt="Новый инструмент HPE MSA Health Check"></div>
+                  <div class="img_container"><img src="/hpe_msa_gen6/img/office_02.webp" alt="Новый инструмент HPE MSA Health Check"></div>
                 </div>
               </div>
               <div class="col col_right">
@@ -301,35 +301,31 @@
           <div class="row">
             <div class="col">
               <div class="col_content">
-                <div id="requestForm">
+                <div class="form" id="requestForm">
                   <div class="form_container">
                     <h2>Получить <br>консультацию <br>специалиста</h2>
-                    <div class="fill-form">
-                       Заполните все поля, пожалуйста</div>
-                    <div class="register">
-                      <form class="former" method="post" action="" enctype="multipart/form-data">
-                        <div class="input_container input_text" id="requestForm_input_i1">
-                          <input class="text required validate-me" type="text" name="i1" value="" data-type="fio" placeholder="Имя Фамилия">
+                    <form class="register" method="post" action="" enctype="multipart/form-data">
+                      <fieldset class="input_container input_text">
+                        <input type="text" name="Имя" data-validate-field="name" placeholder="Имя Фамилия">
+                      </fieldset>
+                      <fieldset class="input_container input_text">
+                        <input type="text" name="Компания" data-validate-field="company" placeholder="Название компании">
+                      </fieldset>
+                      <fieldset class="input_container input_text">
+                        <input type="email" name="E-mail" data-validate-field="email" placeholder="E-mail">
+                      </fieldset>
+                      <fieldset class="input_container input_text">
+                        <textarea name="Вопрос" placeholder="Ваш вопрос" data-validate-field="question"></textarea>
+                      </fieldset>
+                      <div class="inner-wrap">
+                        <div class="field checkbox-field">
+                          <input id="requestForm_policyCheckbox" type="checkbox" name="policy" value="1">
+                          <label class="customCheckbox" for="requestForm_policyCheckbox"></label>
                         </div>
-                        <div class="input_container input_text" id="requestForm_input_i2">
-                          <input class="text required validate-me" type="text" name="i2" value="" data-type="company" placeholder="Название компании">
-                        </div>
-                        <div class="input_container input_text" id="requestForm_input_i3">
-                          <input class="text required validate-me" type="text" name="i3" value="" data-type="email" placeholder="E-mail">
-                        </div>
-                        <div class="input_container input_text" id="requestForm_input_i4">
-                          <textarea class="text required validate-me" name="i4" placeholder="Ваш вопрос"></textarea>
-                        </div>
-                        <div class="inner-wrap">
-                          <div class="field checkbox-field">
-                            <input id="requestForm_policyCheckbox" type="checkbox" name="policy" value="1">
-                            <label class="customCheckbox" for="requestForm_policyCheckbox"></label>
-                          </div>
-                          <div class="input text">Согласен с&nbsp;условиями <a href="https://tegrus.ru/about/privacy-policy/" target="_blank">политики обработки персональных данных</a></div>
-                        </div>
-                        <input class="sendbutton" type="submit" value="Отправить" name="subm">
-                      </form>
-                    </div>
+                        <div class="input">Согласен с&nbsp;условиями <a href="https://tegrus.ru/about/privacy-policy/" target="_blank">политики обработки персональных данных</a></div>
+                      </div>
+                      <input class="sendbutton" type="submit" value="Отправить" name="subm">
+                    </form>
                   </div>
                 </div>
               </div>
@@ -340,15 +336,15 @@
       <section class="partners_section">
         <div class="wrapper_full">
           <div class="partners">
-            <div><img src="img/partner_gold.webp" alt="Gold Partner"></div>
-            <div><img src="img/partner_platinum.webp" alt="Platinum Partner"></div>
+            <div><img src="/hpe_msa_gen6/img/partner_gold.webp" alt="Gold Partner"></div>
+            <div><img src="/hpe_msa_gen6/img/partner_platinum.webp" alt="Platinum Partner"></div>
           </div>
         </div>
       </section>
       <div id="getSolutionButton"><span>Подобрать решение</span></div><a id="toTop" href="#main"></a>
       <div id="getSolutionForm">
         <div class="container">
-          <form class="former" method="post" action="#" enctype="multipart/form-data">
+          <form class="form former" method="post" action="#" enctype="multipart/form-data">
             <div class="row">
               <div class="col">
                 <div class="col_content">
@@ -446,29 +442,27 @@
               </div>
               <div class="col col_right">
                 <div class="col_content">
-                  <div class="form2">
-                    <div class="register">
-                      <div class="input_container input_text" id="getSolutionForm_input_i1">
-                        <input class="text required validate-me" type="text" name="i1" value="" data-type="fio" placeholder="Имя Фамилия">
+                  <div class="register">
+                    <fieldset class="input_container input_text">
+                      <input type="text" name="Имя" data-validate-field="name" placeholder="Имя Фамилия">
+                    </fieldset>
+                    <fieldset class="input_container input_text">
+                      <input type="text" name="Компания" data-validate-field="company" placeholder="Название компании">
+                    </fieldset>
+                    <fieldset class="input_container input_text">
+                      <input type="email" name="E-mail" data-validate-field="email" placeholder="E-mail">
+                    </fieldset>
+                    <fieldset class="input_container input_text">
+                      <textarea name="Вопрос" placeholder="Ваш вопрос" data-validate-field="question"></textarea>
+                    </fieldset>
+                    <div class="inner-wrap">
+                      <div class="input_container input_checkbox field checkbox-field">
+                        <input id="getSolutionForm_policyCheckbox" type="checkbox" name="policy">
+                        <label class="customCheckbox" for="getSolutionForm_policyCheckbox"></label>
                       </div>
-                      <div class="input_container input_text" id="getSolutionForm_input_i2">
-                        <input class="text required validate-me" type="text" name="i2" value="" data-type="company" placeholder="Название компании">
-                      </div>
-                      <div class="input_container input_text" id="getSolutionForm_input_i3">
-                        <input class="text required validate-me" type="text" name="i3" value="" data-type="email" placeholder="E-mail">
-                      </div>
-                      <div class="input_container input_text" id="getSolutionForm_input_i4">
-                        <textarea class="text required validate-me" name="i4" placeholder="Ваш вопрос"></textarea>
-                      </div>
-                      <div class="inner-wrap">
-                        <div class="input_container input_checkbox field checkbox-field">
-                          <input id="getSolutionForm_policyCheckbox" type="checkbox" name="policy">
-                          <label class="customCheckbox" for="getSolutionForm_policyCheckbox"></label>
-                        </div>
-                        <div class="policy_text">Согласен с&nbsp;условиями <a href="https://tegrus.ru/about/privacy-policy/" target="_blank">политики обработки персональных данных</a></div>
-                      </div>
-                      <input class="sendbutton" type="submit" value="Отправить" name="subm">
+                      <div class="policy_text">Согласен с&nbsp;условиями <a href="https://tegrus.ru/about/privacy-policy/" target="_blank">политики обработки персональных данных</a></div>
                     </div>
+                    <input class="sendbutton" type="submit" value="Отправить" name="subm">
                   </div>
                 </div>
               </div>
@@ -482,7 +476,7 @@
         <div class="wrapper">
           <div class="row">
             <div class="col col_left">
-              <div class="col_content"><a href="https://tegrus.ru" target="_blank"><img src="img/logo_footer.svg" alt="Tegrus"></a></div>
+              <div class="col_content"><a href="https://tegrus.ru" target="_blank"><img src="/hpe_msa_gen6/img/logo_footer.svg" alt="Tegrus"></a></div>
             </div>
             <div class="col col_right">
               <div class="row">
@@ -509,8 +503,9 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="libs/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="libs/jquery.fancybox.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="/hpe_msa_gen6/libs/jquery-3.5.1.min.js"></script>
+    <script src="/hpe_msa_gen6/libs/jquery.fancybox.min.js"></script>
+    <script src="/hpe_msa_gen6/libs/just-validate.min.js"></script>
+    <script src="/hpe_msa_gen6/js/main.js"></script>
   </body>
 </html>

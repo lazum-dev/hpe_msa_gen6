@@ -76,12 +76,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function showButtonUp() {
-  let btnUp = document.querySelector('#getSolutionButton');
-  if (window.pageYOffset > 1000) {
-    btnUp.style.opacity = '1';
-  } else {
-    btnUp.style.opacity = '0';
-  }
+    let btnUp = document.querySelector('#getSolutionButton');
+    if (window.pageYOffset > 1000) {
+        btnUp.style.opacity = '1';
+    } else {
+        btnUp.style.opacity = '0';
+    }
 }
 
 window.addEventListener('scroll', showButtonUp);
@@ -125,16 +125,76 @@ if (animItems.length > 0) {
     }, 300);
 }
 
-$(document).ready(function() {
-  $('#getSolutionButton').click(function(){
-    $.fancybox.open({
-      src  : '#getSolutionForm',
-      scrolling   : 'hidden',
-      opts : {
-        afterClose : function( instance, current ) {
-          $('.post_ramka').html('');
-        }
-      }
+$(document).ready(function () {
+    $('#getSolutionButton').click(function () {
+        $.fancybox.open({
+            src: '#getSolutionForm',
+            scrolling: 'hidden',
+        });
     });
-  });
 });
+
+// just-validate
+new window.JustValidate('#requestForm', {
+    rules: {
+        company: {
+            required: true,
+        },
+        question: {
+            required: true,
+        }
+    },
+    colorWrong: '#ff3435',
+    messages: {
+        name: {
+            required: 'Введите имя',
+            minLength: 'Имя не должно быть меньше 3 символов',
+            maxLength: 'Имя не должно содержать более 15 символов'
+        },
+        company: {
+            required: 'Введите название компании',
+        },
+        email: {
+            email: 'Введите корректный E-mail',
+            required: 'Введите E-mail'
+        },
+        question: {
+            required: 'Напишите ваш вопрос'
+        }
+    },
+    submitHandler: function (thisForm) {
+
+    }
+})
+
+new window.JustValidate('#getSolutionForm', {
+    rules: {
+        company: {
+            required: true,
+        },
+        question: {
+            required: true,
+        }
+    },
+    colorWrong: '#ff3435',
+    messages: {
+        name: {
+            required: 'Введите имя',
+            minLength: 'Имя не должно быть меньше 3 символов',
+            maxLength: 'Имя не должно содержать более 15 символов'
+        },
+        company: {
+            required: 'Введите название компании',
+        },
+        email: {
+            email: 'Введите корректный E-mail',
+            required: 'Введите E-mail'
+        },
+        question: {
+            required: 'Напишите ваш вопрос'
+        }
+    },
+    submitHandler: function (thisForm) {
+
+    }
+})
